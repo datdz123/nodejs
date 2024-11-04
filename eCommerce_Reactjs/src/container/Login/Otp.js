@@ -149,7 +149,7 @@ const Otp = (props) => {
                     </div>
                     <div className="mt-3 mb-5">
                         <div id="sign-in-button"></div>
-                        <button onClick={() => submitOTP()} className="btn btn-success px-4 verify-btn">Xác thực</button>
+                        <button onClick={() => submitOTP()} className="btn btn-success d-none d-none px-4 verify-btn">Xác thực</button>
                     </div>
                 </div>
             </div>

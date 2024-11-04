@@ -17,30 +17,30 @@ function ProductFeature(props) {
 
     return (
 
-        <section className="feature_product_area section_gap_bottom_custom">
-            <div className="container">
-                <HeaderContent mainContent={props.title}
-                    infoContent="Bạn sẽ không thất vọng khi lựa chọn"> </HeaderContent>
+        <section className="feature_product_area section_gap_bottom_custom d-none">
+            {/*<div className="container">*/}
+            {/*    <HeaderContent mainContent={props.title}*/}
+            {/*        infoContent="Bạn sẽ không thất vọng khi lựa chọn"> </HeaderContent>*/}
 
-                <div className="row box-productFeature">
-                    <Slider {...settings}>
-                        {props.data && props.data.length > 3 &&
-                            props.data.map((item, index) => {
-                                return (
-                                    <ItemProduct id={item.id} key={index} width={350} height={419} type="col-lg-4 col-md-6" name={item.name} img={item.productDetail[0].productImage[0].image}
-                                        price={item.productDetail[0].originalPrice} discountPrice={item.productDetail[0].discountPrice}>
-                                    </ItemProduct>
-                                )
-                            })
-                        }
-
-
-                    </Slider>
-                </div>
+            {/*    <div className="row box-productFeature">*/}
+            {/*        <Slider {...settings}>*/}
+            {/*            {props.data && props.data.length > 3 &&*/}
+            {/*                props.data.map((item, index) => {*/}
+            {/*                    return (*/}
+            {/*                        <ItemProduct id={item.id} key={index} width={350} height={419} type="col-lg-4 col-md-6" name={item.name} img={item.productDetail[0].productImage[0].image}*/}
+            {/*                            price={item.productDetail[0].originalPrice} discountPrice={item.productDetail[0].discountPrice}>*/}
+            {/*                        </ItemProduct>*/}
+            {/*                    )*/}
+            {/*                })*/}
+            {/*            }*/}
 
 
+            {/*        </Slider>*/}
+            {/*    </div>*/}
 
-            </div>
+
+
+            {/*</div>*/}
         </section>
 
 

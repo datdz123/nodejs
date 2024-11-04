@@ -219,7 +219,6 @@ const LoginWebPage = () => {
                                                 <a style={{ cursor: 'pointer', }} className="switch">Tài khoản mới</a>
                                             </div>
                                             <FacebookLoginButton text="Đăng nhập với Facebook" iconSize="25px" style={{ width: "300px", height: "40px", fontSize: "16px", marginTop: "40px", marginBottom: "10px" }} onClick={() => signInwithFacebook()} />
-                                            <GoogleLoginButton text="Đăng nhập với Google" iconSize="25px" style={{ width: "300px", height: "40px", fontSize: "16px" }} onClick={() => signInwithGoogle()} />
                                         </form>
                                     </div>{/* End Login Form */}
                                     {/* Signup Form */}

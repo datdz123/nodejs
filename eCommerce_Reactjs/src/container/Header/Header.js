@@ -27,7 +27,7 @@ const Header = props => {
             dispatch(getItemCartStart(userData.id))
             socketRef.current.on('getId', data => {
                 setId(data)
-              }) // phần này đơn giản để gán id cho mỗi phiên kết nối vào page. Mục đích chính là để phân biệt đoạn nào là của mình đang chat.
+              })
             fetchListRoom(userData.id)
     
             socketRef.current.on('sendDataServer', dataGot => {
@@ -80,8 +80,7 @@ const Header = props => {
                     <nav className="navbar navbar-expand-lg navbar-light w-100">
                         {/* Brand and toggle get grouped for better mobile display */}
                         <NavLink to="/" className="navbar-brand logo_h">
-                            {/*<img src="/resources/img/logo.png" alt="" />*/}
-                            <h1>QD SHOP</h1>
+                            <img src="/resources/img/logo.png" alt="" />
                         </NavLink>
                         <button className="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -128,15 +127,15 @@ const Header = props => {
                                 </div>
                                 <div className="col-lg-3 pr-0">
                                     <ul className="nav navbar-nav navbar-right right_nav pull-right">
-                                        <li className="nav-item">
-                                        <Link to={"/user/messenger"} className="icons">
-                                            <i class="fa-brands fa-facebook-messenger"></i>
-                                            </Link>
-                                            {quantityMessage>0 && 
-                                             <span className="box-message-quantity">{quantityMessage}</span>
-                                            }
-                                           
-                                        </li>
+                                        {/*<li className="nav-item">*/}
+                                        {/*<Link to={"/user/messenger"} className="icons">*/}
+                                        {/*    <i class="fa-brands fa-facebook-messenger"></i>*/}
+                                        {/*    </Link>*/}
+                                        {/*    {quantityMessage>0 && */}
+                                        {/*     <span className="box-message-quantity">{quantityMessage}</span>*/}
+                                        {/*    }*/}
+                                        {/*   */}
+                                        {/*</li>*/}
                                         <li className="nav-item">
                                             <Link to={"/shopcart"} className="icons">
                                                 <i className="ti-shopping-cart" />

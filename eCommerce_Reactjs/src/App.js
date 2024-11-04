@@ -32,6 +32,7 @@ import PaymentSuccess from './container/User/PaymentSuccess';
 import MessagePage from './container/Message/MessagePage';
 import VnpayPaymentPage from './container/Order/VnpayPaymentPage';
 import VnpayPaymentSuccess from './container/Order/VnpayPaymentSuccess';
+import About from "./container/Blog/About";
 
 function App() {
 
@@ -111,7 +112,7 @@ function App() {
           </Route>
           <Route path="/about">
             <Header />
-
+            <About/>
             <Footer />
           </Route>
           

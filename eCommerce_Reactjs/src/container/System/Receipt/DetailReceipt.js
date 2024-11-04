@@ -178,7 +178,7 @@ const DetailReceipt = (props) => {
                     <div className='row'>
 
                         <div className='col-12'>
-                            {/* <button  style={{float:'right'}} onClick={() => handleOnClickExport()} className="btn btn-success mb-2" >Xuất excel <i class="fa-solid fa-file-excel"></i></button> */}
+                            {/* <button  style={{float:'right'}} onClick={() => handleOnClickExport()} className="btn btn-success d-none d-none mb-2" >Xuất excel <i class="fa-solid fa-file-excel"></i></button> */}
                         </div>
                     </div>
                     <div className="table-responsive">
